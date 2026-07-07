@@ -1,0 +1,12 @@
+{
+  "builds": [
+    {
+      "src": "server.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    { "src": "/agent/message", "dest": "server.py" },
+    { "src": "/health", "dest": "server.py" }
+  ]
+}
