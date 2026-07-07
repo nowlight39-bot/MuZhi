@@ -167,7 +167,7 @@ def handle_stream(params, req_id):
                     "kind": "artifact-update",
                     "append": True,
                     "lastChunk": is_last,
-                    "final": is_last,
+                    "final": False,
                     "artifact": {
                         "artifactId": artifact_id,
                         "parts": [{"kind": "text", "text": chunk}]
